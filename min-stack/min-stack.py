@@ -5,19 +5,21 @@ class MinStack:
 
     def push(self, val):
         self.stack.append(val)
-        
-        if self.minimums and val <= self.minimums[0]:
-            self.minimums.appendleft(val)
+        if not self.minimums:
+            self.minimums.append(val)
             return
-        self.minimums.append(val)
+            
+        if val <= self.minimums[0]:
+                self.minimums.appendleft(val)
+                return
+        
 
     def pop(self):
         val = self.stack.pop()
         if self.minimums[0] == val:
             self.minimums.popleft()
             return
-        self.minimums.pop()
-
+        
     def top(self):
         return self.stack[-1]
 
