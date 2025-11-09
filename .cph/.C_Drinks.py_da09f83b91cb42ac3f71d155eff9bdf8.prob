@@ -1,0 +1,1 @@
+{"name":"Local: C_Drinks","url":"/home/danielbogale/Documents/A2SV/C_Drinks.py","tests":[{"id":1759131759979,"input":"3\n50 50 100","output":"66.666666666667"},{"id":1759131781773,"input":"4\n0 25 50 75","output":"37.500000000000"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/danielbogale/Documents/A2SV/C_Drinks.py","group":"local","local":true}
